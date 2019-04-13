@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>首页</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="http://www.eat163.com/assets/bootstrap-3.3.7.css">
+</head>
+<body>
+    <script type="text/javascript" src='http://www.eat163.com/assets/jquery-3.3.1.min.js'></script>
+    
+    <div id="root"></div>
+    <% name=htmlWebpackPlugin.options.filename.split(".")[0]  %>
+    <script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[name].entry %>"></script>
+    
+</body>
+</html>
