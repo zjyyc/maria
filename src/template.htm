@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>首页</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="http://www.eat163.com/assets/bootstrap-3.3.7.css">
 </head>
 <body>
     <script type="text/javascript" src='http://www.eat163.com/assets/jquery-3.3.1.min.js'></script>
-    
+<% for (var i=0; i< htmlWebpackPlugin.options.jsList.length;i++) { %>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.options.jsList[i] %>"></script>
+<% } %>
     <div id="root"></div>
     <% name=htmlWebpackPlugin.options.filename.split(".")[0]  %>
     <script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[name].entry %>"></script>

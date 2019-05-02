@@ -1,0 +1,142 @@
+html{
+
+}
+body{
+    .nav-panel{
+        display: none;
+    }
+    .bg{
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        background-image:url('http://yixingcc.oss-cn-beijing.aliyuncs.com/1538763257023-521.jpg');
+        background-size:cover;
+        background-repeat : no-repeat;
+        background-position:center center;
+    }
+    .mask{
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        background: #000;
+        opacity: 0.5;
+    }
+    .box{
+        display: block;
+        width:360px;
+        position: absolute;
+        left:50%;
+        top:100px;
+        margin-left:-180px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        border-radius: 8px;
+        overflow: hidden;
+        .box-bg{
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            background: #fff;
+            opacity: 0.8;
+            border-radius: 8px;
+        }
+        .hd{
+            position: absolute;
+            top:0;
+            left:0;
+            color:#333;
+            height:50px;
+            line-height:50px;
+            div{
+                position: absolute;
+                top:0;
+                left:0;
+                height:50px;
+                line-height:50px;
+                width:180px;
+                background: #e7e7e7;
+                text-align:center;
+                border-bottom:solid 1px #ccc;
+                font-size:18px;
+                -webkit-font-smoothing: antialiased;
+                cursor: pointer;
+                z-index:15;
+            }
+            div:last-child{
+                left: 180px;
+                border-left:solid 1px #ccc;
+            }
+            div:hover{
+                color:#f50;
+            }
+            
+            &.login{
+                div:last-child{
+                    color:#fff;
+                    background-image: linear-gradient(135deg,#ff971b,#ff5000);
+                }
+            }
+            &.register{
+                div:first-child{
+                    color:#fff;
+                    background-image: linear-gradient(135deg,#ff971b,#ff5000);
+                }
+            }
+        }
+        .bd{
+            position: relative;
+            z-index:10;
+            padding-top:80px;
+            padding-bottom:30px;
+            .form-group{
+                label{
+                    float: left;
+                    line-height:34px;
+                    margin-right:30px;
+                    width:80px;
+                    text-align:right;
+                }
+                input{
+                    float: left;
+                    width:200px;
+                }
+                div{
+                    display: none;
+                }
+                height:34px;
+                margin-bottom:20px;
+                
+            }
+            .form-group.has-error{
+                height: 50px;
+                div{
+                    display: block;
+                    float: none;
+                    clear:both;
+                    color:#a94442;
+                    margin-left:110px;
+                    width:200px;
+                    overflow: hidden;
+                    height:20px;
+                    line-height:20px;
+                    margin-top:5px;
+                }
+            }
+            button{
+                margin-top:10px;
+                margin-left:110px;
+                width:80px;
+            }
+        }
+    }
+}
+
+
+
+
+

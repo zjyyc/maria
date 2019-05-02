@@ -1,0 +1,69 @@
+.modal{
+	z-index:1000;
+	position: fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+	-webkit-font-smoothing: antialiased;
+	.modal-body{
+		span{
+			color:#f40;
+			font-weight:bold;
+			font-size:16px;
+			padding:5px;
+		}
+	}
+	.modal-dialog{
+		width:500px;
+	}
+	.mask{
+		position: absolute;
+		left:0;
+		right:0;
+		top:0;
+		bottom: 0;
+		background: #000;
+		opacity: 0.6;
+	}
+	.modal-dialog{
+		margin: 150px auto;
+	}
+	.modal-footer{
+		text-align:center;
+	}
+	button{
+		margin:0 10px;
+	}
+	.btn-primary{
+		display: none;
+	}
+}
+.waiting{
+	display: none;
+	.mask{
+		position: fixed;
+		left:0;
+		right:0;
+		top:0;
+		bottom: 0;
+		background: #000;
+		opacity: 0.5;
+		z-index:600;
+	}
+	img{
+		display: block;
+		width: 80px;
+		height: 80px;
+		position: fixed;
+		left: 50%;
+		top:50%;
+		margin-left:-40px;
+		margin-right:-40px;
+		z-index:601;
+	}
+}
+
+
+
+
