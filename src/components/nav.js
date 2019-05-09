@@ -41,7 +41,7 @@ class Nav extends React.Component{
 		})
 	}
 	logOut(){
-		lib.get('login.php?method=logout' , {} , function(){
+		lib.get('/maria/logout.json' , {} , function(){
 			window.location = 'login.htm';
 		})
 	}
